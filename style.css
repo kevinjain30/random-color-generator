@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+#coolors-logo{
+    width: 200px;
+}
+#coolors-logo:hover{
+    cursor: pointer;
+}
+#nav-bar{
+    height: 80px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    box-shadow: 0px 5px 5px rgba(146, 146, 146, 0.241);
+    /* border-radius: 50px; */
+}
+#msg{
+    color: rgba(105, 105, 105, 0.667);
+    text-align: center;
+    padding: 25px;
+    transition: all 0.3s ease;
+    border: 0;
+    background-color: transparent;
+    font-size: 16px;
+}
+#press-click{
+    text-align: center;
+}
+.colors{
+    /* border: 1px solid black; */
+    width: 100%;
+}
+#color-container{
+    height: 75vh;
+    display: flex;
+    /* width: 95%;
+    margin: auto; */
+    box-shadow: 2px 2px 20px rgb(108, 108, 108);
+    margin-top: 14px;
+}
+/* main{
+    width: 80%;
+    margin: auto;
+} */
+#c1{
+    background-color: #ff0000;
+}
+#c2{
+    background-color: #0000ff;
+}
+#c3{
+    background-color: #ffc2cc;
+}
+#c4{
+    background-color: #ffff00;
+}
+#c5{
+    background-color: #ffa500;
+}
+.colors{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+    transition: all 0.2s ease;
+}
+.colors:hover{
+    margin: 0px 2px;
+    width: 110%;
+    transform: translate(0px,-15px);
+    border-radius: 20px;
+    height: 100%;
+}
+.colors p{
+    background-color: rgba(81, 81, 81, 0.31);
+    padding: 10px;
+    border-radius: 10px;
+}
+.colors button{
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: all 0.2s ease;
+}
+.colors button:hover{
+    cursor: pointer;
+    background-color: rgba(81, 81, 81, 0.31);
+    border-radius: 10px;
+}
+#toast{
+    position: fixed;
+    z-index: 100;
+    background-color: rgba(80, 80, 80, 0.573);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+@media(max-width: 850px){
+    #color-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .colors{
+        height: 100vh;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .colors:hover{
+        transform: translate(0px, 0px);
+        height: 100vh;
+        margin: 0;
+        width: 100%;
+        border-radius: 0px;
+    }
+}
