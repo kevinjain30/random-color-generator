@@ -10,7 +10,7 @@ let p3 = document.getElementById("p3");
 let p4 = document.getElementById("p4");
 let p5 = document.getElementById("p5");
 
-let copyBtn = document.getElementsByClassName("copy-btns");
+let copyBtn = document.querySelectorAll(".copy-btns");
 let toast = document.getElementById("toast");
 let generateBtn = document.getElementById("random-btn");
 
@@ -29,20 +29,18 @@ function changeColor() {
     }
 }
 
-// Copy function
 function copyToClipboard(text) {
     navigator.clipboard.writeText(text);
     toast.style.display = "block";
     setTimeout(() => {
         toast.style.display = "none";
-    }, 2000);
+    }, 1000);
 }
 
-// Attach event listener to each copy button
 for (let i = 0; i < copyBtn.length; i++) {
     copyBtn[i].addEventListener("click",()=>{
+        copyBtn[i].blur();
         let colorCode = paras[i].textContent;
-        console.log("hello")
         copyToClipboard(colorCode);
     });
 }
@@ -53,8 +51,8 @@ generateBtn.addEventListener(("click"),()=>{
     changeColor();
 });
 
-window.addEventListener("keydown",(e)=>{
+window.addEventListener("keypress",(e)=>{
     if(e.code === "Space"){
         changeColor();
     }
-})
+});
