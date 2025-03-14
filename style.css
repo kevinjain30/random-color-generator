@@ -120,6 +120,9 @@ nav{
     display: none;
     transform: translateX(-50%);
 }
+#random-btn:hover{
+    cursor: pointer;
+}
 
 @media(max-width: 850px){
     #color-container{
