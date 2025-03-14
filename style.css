@@ -129,6 +129,9 @@ nav{
 }
 
 @media(max-width: 850px){
+    *{
+        font-size: 14px;
+    }
     #color-container{
         display: flex;
         flex-direction: column;
