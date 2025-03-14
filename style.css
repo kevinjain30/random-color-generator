@@ -110,7 +110,7 @@ nav{
     background-color: #FFD166;
     border-radius: 20px;
     font-size: 16px;
-    position: fixed;
+    position: absolute;
     left: 50%;
     bottom: 10px;
     display: none;
@@ -118,6 +118,14 @@ nav{
 }
 #random-btn:hover{
     cursor: pointer;
+}
+#hide{
+    display: none;
+}
+#generate-color{
+    display: none;
+    position: relative;
+    margin-top: 70px;
 }
 
 @media(max-width: 850px){
@@ -139,5 +147,11 @@ nav{
     }
     #random-btn{
         display: block;
+    }
+    #generate-color{
+        display: block;
+    }
+    #hide{
+        display: inline;
     }
 }
