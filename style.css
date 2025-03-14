@@ -98,7 +98,7 @@ nav{
 }
 #toast{
     position: fixed;
-    z-index: 100;
+    /* z-index: 100; */
     background-color: rgba(80, 80, 80, 0.573);
     padding: 10px;
     border-radius: 10px;
@@ -107,6 +107,18 @@ nav{
     left: 50%;
     transform: translateX(-50%);
     display: none;
+}
+#random-btn{
+    border: 2px solid #564e3c;
+    padding: 10px 20px;
+    background-color: #FFD166;
+    border-radius: 20px;
+    font-size: 16px;
+    position: fixed;
+    left: 50%;
+    bottom: 10px;
+    display: none;
+    transform: translateX(-50%);
 }
 
 @media(max-width: 850px){
@@ -125,5 +137,8 @@ nav{
         margin: 0;
         width: 100%;
         border-radius: 0px;
+    }
+    #random-btn{
+        display: block;
     }
 }
